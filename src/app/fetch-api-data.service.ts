@@ -17,7 +17,51 @@ export class UserRegistrationService {
     return this.http.post(apiUrl + 'users', userDetails).pipe(
       catchError(this.handleError)
     );
-  }
+  };
+
+  public userLogin(userDetails: any): Observable<any> {
+
+  };
+
+  public getAllMovies(userDetail: any): Observable<any> {
+
+  };
+
+  public getOneMovie(userDetails: any): Observable<any> {
+
+  };
+
+  public getDirector(userDetails: any): Observable<any> {
+
+  };
+
+  public getGenre(userDetails: any): Observable<any> {
+
+  };
+
+  public getUser(userDetails: any): Observable<any> {
+
+  };
+
+  public getFavoriteMovies(userDetails: any): Observable<any> {
+
+  };
+
+  public addToFavorites(userDetails: any): Observable<any> {
+
+  };
+
+  public updateUser(userDetails: any): Observable<any> {
+
+  };
+
+  public deleteUser(userDetails: any): Observable<any> {
+
+  };
+
+  public deleteFromFavorites(userDetails: any): Observable<any> {
+
+  };
 
   private handleError(error: HttpErrorResponse): any {
     if (error.error instanceof ErrorEvent) {
